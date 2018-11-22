@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.IE;
 
 namespace WebSelenium.UI.Test
 {
@@ -30,14 +31,17 @@ namespace WebSelenium.UI.Test
             driver.FindElement(By.Id("password")).SendKeys("foobar");
 
             driver.FindElement(By.Id("btnLogin")).Click();
-
+            driver.Close();
+            driver.Dispose();
             
         }
         [TestMethod]
         public void CanFillAndSubmitForm()
         {
             
-            var driver = new ChromeDriver();
+            //var driver = new ChromeDriver();
+
+            var driver = new InternetExplorerDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/FillForm.aspx");
             Assert.AreEqual("Fill out form", driver.Title);
@@ -52,6 +56,9 @@ namespace WebSelenium.UI.Test
 
             Assert.IsTrue(driver.FindElement(By.CssSelector("confirm-label")).Text.
                    Contains("Submission successful."));
+
+            driver.Close();
+            driver.Dispose();
         }
     }
 }
