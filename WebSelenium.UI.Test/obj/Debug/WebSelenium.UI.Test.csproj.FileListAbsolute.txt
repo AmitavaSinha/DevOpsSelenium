@@ -1,0 +1,16 @@
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\WebSelenium.UI.Test.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\WebSelenium.UI.Test.pdb
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Newtonsoft.Json.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\WebDriver.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\Newtonsoft.Json.xml
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\bin\Debug\WebDriver.xml
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\obj\Debug\WebSelenium.UI.Test.csprojResolveAssemblyReference.cache
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\obj\Debug\WebSelenium.UI.Test.dll
+C:\COE\COE\DevOps\WebSelenium\WebSelenium.UI.Test\obj\Debug\WebSelenium.UI.Test.pdb

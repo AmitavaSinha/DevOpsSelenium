@@ -1,0 +1,7 @@
+C:\COE\COE\DevOps\WebSelenium\.vs\WebSelenium\22404\b\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\COE\COE\DevOps\WebSelenium\.vs\WebSelenium\22404\b\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\COE\COE\DevOps\WebSelenium\.vs\WebSelenium\22404\b\WebSelenium.UI.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\COE\COE\DevOps\WebSelenium\.vs\WebSelenium\22404\b\WebSelenium.UI.Test\bin\Debug\WebSelenium.UI.Test.dll
+C:\COE\COE\DevOps\WebSelenium\.vs\WebSelenium\22404\b\WebSelenium.UI.Test\bin\Debug\WebSelenium.UI.Test.pdb
+C:\COE\COE\DevOps\WebSelenium\.vs\WebSelenium\22404\i\WebSelenium.UI.Test\Debug\WebSelenium.UI.Test.dll
+C:\COE\COE\DevOps\WebSelenium\.vs\WebSelenium\22404\i\WebSelenium.UI.Test\Debug\WebSelenium.UI.Test.pdb

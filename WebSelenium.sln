@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSelenium", "WebSelenium\WebSelenium.csproj", "{616E2FE2-7012-433E-BC2B-D6C84F3424B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSelenium.UI.Test", "WebSelenium.UI.Test\WebSelenium.UI.Test.csproj", "{95B8BE96-3A18-44EF-943A-C144BD57373B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{616E2FE2-7012-433E-BC2B-D6C84F3424B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616E2FE2-7012-433E-BC2B-D6C84F3424B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616E2FE2-7012-433E-BC2B-D6C84F3424B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616E2FE2-7012-433E-BC2B-D6C84F3424B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B8BE96-3A18-44EF-943A-C144BD57373B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B8BE96-3A18-44EF-943A-C144BD57373B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B8BE96-3A18-44EF-943A-C144BD57373B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B8BE96-3A18-44EF-943A-C144BD57373B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
