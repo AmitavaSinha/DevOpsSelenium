@@ -8,7 +8,7 @@ namespace WebSelenium.UI.Test
     [TestClass]
     public class FillFormIntegrationTest 
     {
-        public static string BaseUrl = "http://localhost:16699";
+        public static string BaseUrl = "https://demodevd.azurewebsites.net";
 
         // the max. time to wait before timing out.
         public const int TimeOut = 30;
