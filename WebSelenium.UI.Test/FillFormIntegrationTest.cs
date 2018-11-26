@@ -1,24 +1,60 @@
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
+using System.Collections.Generic;
 
 namespace WebSelenium.UI.Test
 {
     [TestClass]
     public class FillFormIntegrationTest 
     {
-        public static string BaseUrl = "http://localhost:16699";
-
+        private string appURL;
+        private const string IE_DRIVER_PATH = @"C:\SeleniumDriver\IEDriverServer.exe";
+        public string BaseUrl = "http://localhost:16699";
+        private TestContext testContextInstance;
+        private IWebDriver driver;
+        
         // the max. time to wait before timing out.
         public const int TimeOut = 30;
 
+        public FillFormIntegrationTest()
+        {
+
+        }
+
+
+        [TestInitialize()]
+        public void SetupTest()
+        {
+            appURL = "http://localhost:16699";
+
+            string browser = "IE";
+            switch (browser)
+            {
+                case "Chrome":
+                    driver = new ChromeDriver();
+                    break;
+                case "Firefox":
+                    driver = new FirefoxDriver();
+                    break;
+                case "IE":
+                    driver = new InternetExplorerDriver(IE_DRIVER_PATH);
+                    break;
+                default:
+                    driver = new ChromeDriver();
+                    break;
+            }
+
+        }
+
         [TestMethod]
+        [TestCategory("IE")]
         public void CanLogin()
         {
-            var driver = new ChromeDriver();
+            var driver = new InternetExplorerDriver(IE_DRIVER_PATH);
             //driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(TimeOut));
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/Login.aspx");
@@ -32,9 +68,10 @@ namespace WebSelenium.UI.Test
             
         }
         [TestMethod]
+        [TestCategory("IE")]
         public void CanFillAndSubmitForm()
         {
-            var driver = new InternetExplorerDriver();
+            var driver = new ChromeDriver();
             //var driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/FillForm.aspx");
@@ -53,6 +90,20 @@ namespace WebSelenium.UI.Test
 
             driver.Close();
             driver.Dispose();
+        }
+
+        [TestCleanup()]
+        public void MyTestCleanup()
+        {
+            var exceptions = new List<Exception>();
+            try
+            {
+                driver.Quit();
+            }
+            catch (Exception ex)
+            {
+                exceptions.Add(ex);
+            }
         }
     }
 }
