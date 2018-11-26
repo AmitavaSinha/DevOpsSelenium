@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 
 namespace WebSelenium.UI.Test
 {
@@ -17,7 +18,7 @@ namespace WebSelenium.UI.Test
         [TestMethod]
         public void CanLogin()
         {
-            var driver = new ChromeDriver();
+            var driver = new InternetExplorerDriver();
             //driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(TimeOut));
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/Login.aspx");
@@ -33,7 +34,7 @@ namespace WebSelenium.UI.Test
         [TestMethod]
         public void CanFillAndSubmitForm()
         {
-            var driver = new ChromeDriver();
+            var driver = new InternetExplorerDriver();
             //var driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/FillForm.aspx");
