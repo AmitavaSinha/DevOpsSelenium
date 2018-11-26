@@ -12,7 +12,7 @@ namespace WebSelenium.UI.Test
     public class FillFormIntegrationTest 
     {
         private string appURL;
-        private const string IE_DRIVER_PATH = @"C:\SeleniumDriver\IEDriverServer.exe";
+        private const string IE_DRIVER_PATH = @"C:\SeleniumDriver\";
         public string BaseUrl = "http://localhost:16699";
         private TestContext testContextInstance;
         private IWebDriver driver;
