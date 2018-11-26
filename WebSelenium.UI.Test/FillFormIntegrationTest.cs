@@ -18,7 +18,7 @@ namespace WebSelenium.UI.Test
         [TestMethod]
         public void CanLogin()
         {
-            var driver = new InternetExplorerDriver();
+            var driver = new ChromeDriver();
             //driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(TimeOut));
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/Login.aspx");
