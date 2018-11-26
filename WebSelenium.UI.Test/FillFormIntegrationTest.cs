@@ -34,27 +34,38 @@ namespace WebSelenium.UI.Test
             string browser = "IE";
             switch (browser)
             {
-                case "Chrome":
-                    driver = new ChromeDriver();
-                    break;
-                case "Firefox":
-                    driver = new FirefoxDriver();
-                    break;
+                
                 case "IE":
                     driver = new InternetExplorerDriver(IE_DRIVER_PATH);
                     break;
                 default:
-                    driver = new ChromeDriver();
+                    driver = new InternetExplorerDriver(IE_DRIVER_PATH);
                     break;
             }
 
+        }
+
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
         }
 
         [TestMethod]
         [TestCategory("IE")]
         public void CanLogin()
         {
-            var driver = new InternetExplorerDriver(IE_DRIVER_PATH);
+            //var driver = new InternetExplorerDriver(IE_DRIVER_PATH);
             //driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(TimeOut));
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/Login.aspx");
@@ -71,8 +82,8 @@ namespace WebSelenium.UI.Test
         [TestCategory("IE")]
         public void CanFillAndSubmitForm()
         {
-            var driver = new ChromeDriver();
-            //var driver = new FirefoxDriver();
+            //var driver = new ChromeDriver();
+            ////var driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(TimeOut);
             driver.Navigate().GoToUrl(BaseUrl + "/FillForm.aspx");
             //Assert.AreEqual("Fill out form", driver.Title);
@@ -107,3 +118,4 @@ namespace WebSelenium.UI.Test
         }
     }
 }
+
